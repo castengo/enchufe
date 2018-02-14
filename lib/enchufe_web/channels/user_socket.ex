@@ -2,7 +2,7 @@ defmodule EnchufeWeb.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", EnchufeWeb.RoomChannel
+  channel "timer:*", EnchufeWeb.TimerChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket

@@ -12,6 +12,7 @@ defmodule Enchufe.Application do
       supervisor(EnchufeWeb.Endpoint, []),
       # Start your own worker by calling: Enchufe.Worker.start_link(arg1, arg2, arg3)
       # worker(Enchufe.Worker, [arg1, arg2, arg3]),
+      worker(Enchufe.Timer, []),
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
