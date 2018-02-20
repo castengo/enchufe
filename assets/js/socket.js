@@ -64,7 +64,7 @@ channel.on('new_time', msg => {
   document.getElementById('timer').innerHTML = msg.time
 })
 
-let startTimer = function () {
+let startTimer = function (event) {
   event.preventDefault()
   channel.push('start_timer', {})
     .receive('ok', resp => { console.log('Started timer', resp) })
